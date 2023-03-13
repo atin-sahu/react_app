@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../redux/slice";
+import { decrement, increment } from "../redux/counter/slice";
 
 
 export const Counter = ()=>{
@@ -13,7 +13,7 @@ export const Counter = ()=>{
 
     return (
         <div>
-            <h3>hii wel in our counter app</h3>
+            <h3>hii WELCOME in our counter app</h3>
             <p>counter : <span>{counter}</span></p>
             <button onClick={()=>dispatch(increment(1))}>add +</button>
             <button disabled={counter<=0} onClick={()=>dispatch(decrement(-1))}>subb -</button>
